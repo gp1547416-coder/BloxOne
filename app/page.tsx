@@ -31,7 +31,7 @@ export default function BloxOneGenerator() {
               {number}
             </span>
           ) : (
-            <span className="text-slate-600 font-medium italic">Ready to roll...</span>
+            <span className="text-slate-600 font-medium italic">Ready to Generate Robux!</span>
           )}
           <div className="absolute inset-0 opacity-10 pointer-events-none" 
                style={{ 
