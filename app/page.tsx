@@ -8,7 +8,6 @@ export default function BloxOneGenerator() {
 
   const generateNumber = () => {
     setIsAnimating(true);
-    
     setTimeout(() => {
       const randomNum = Math.floor(Math.random() * 1000) + 1;
       setNumber(randomNum);
@@ -19,8 +18,6 @@ export default function BloxOneGenerator() {
   return (
     <div className="min-h-screen bg-slate-950 flex items-center justify-center font-sans text-slate-100">
       <div className="w-full max-w-md p-8 bg-slate-900 border border-slate-800 rounded-3xl shadow-2xl">
-        
-        {/* Header */}
         <div className="flex items-center gap-3 mb-8">
           <div className="bg-blue-600 p-2 rounded-lg">
             <Hash size={24} className="text-white" />
@@ -28,7 +25,6 @@ export default function BloxOneGenerator() {
           <h1 className="text-2xl font-bold tracking-tight">BloxOne</h1>
         </div>
 
-        {/* Display Area */}
         <div className="relative h-48 mb-8 bg-slate-950 rounded-2xl border border-slate-800 flex items-center justify-center overflow-hidden">
           {number !== null ? (
             <span className={`text-7xl font-black transition-all duration-200 ${isAnimating ? 'opacity-0 scale-90' : 'opacity-100 scale-100'}`}>
@@ -37,8 +33,6 @@ export default function BloxOneGenerator() {
           ) : (
             <span className="text-slate-600 font-medium italic">Ready to roll...</span>
           )}
-          
-          {/* Decorative Grid background - FIX APPLIED HERE */}
           <div className="absolute inset-0 opacity-10 pointer-events-none" 
                style={{ 
                  backgroundImage: 'radial-gradient(#3b82f6 1px, transparent 1px)', 
@@ -47,7 +41,6 @@ export default function BloxOneGenerator() {
           </div>
         </div>
 
-        {/* Controls */}
         <button
           onClick={generateNumber}
           disabled={isAnimating}
