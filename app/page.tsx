@@ -9,7 +9,6 @@ export default function BloxOneGenerator() {
   const generateNumber = () => {
     setIsAnimating(true);
     
-    // Simple "rolling" effect duration
     setTimeout(() => {
       const randomNum = Math.floor(Math.random() * 1000) + 1;
       setNumber(randomNum);
@@ -36,12 +35,15 @@ export default function BloxOneGenerator() {
               {number}
             </span>
           ) : (
-            <span className="text-slate-600 font-medium italic">Ready to Generate Robux..</span>
+            <span className="text-slate-600 font-medium italic">Ready to roll...</span>
           )}
           
-          {/* Decorative Grid background */}
+          {/* Decorative Grid background - FIX APPLIED HERE */}
           <div className="absolute inset-0 opacity-10 pointer-events-none" 
-               style={{ backgroundImage: 'radial-gradient(#3b82f6 1px, transparent 1px)', size: '20px 20px', backgroundSize: '20px 20px' }}>
+               style={{ 
+                 backgroundImage: 'radial-gradient(#3b82f6 1px, transparent 1px)', 
+                 backgroundSize: '20px 20px' 
+               }}>
           </div>
         </div>
 
