@@ -36,7 +36,7 @@ export default function BloxOneGenerator() {
               {number}
             </span>
           ) : (
-            <span className="text-slate-600 font-medium italic">Ready to roll...</span>
+            <span className="text-slate-600 font-medium italic">Ready to Generate Robux..</span>
           )}
           
           {/* Decorative Grid background */}
